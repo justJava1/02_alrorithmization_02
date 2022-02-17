@@ -1,0 +1,16 @@
+/*
+  Даны целые числа а1 ,а2 ,..., аn . Вывести на печать только те числа, для которых аi > i
+*/
+import java.util.Arrays;
+public class Project {
+    public static void main(String[] args) {
+        int[]array={12,51,1,0,3,13,2,14,6};
+                for(int i=0;i<array.length;i++){
+                    if(array[i]>i)
+                    {
+                        System.out.println("Числа удовлетвор условию: "+array[i]+" ");
+                    }
+                }
+
+    }
+}

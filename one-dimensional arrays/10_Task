@@ -1,0 +1,15 @@
+/*
+  Дан целочисленный массив с количеством элементов п.
+Сжать массив, выбросив из него каждый второй элемент (освободившиеся элементы заполнить нулями).
+*/
+import java.util.Arrays;
+public class Project {
+    public static void main(String[] args) {
+     int [] array={15,20,21,42,543,42,34,23,31};
+     for(int i=1;i<array.length;i+=2)
+     {
+         array[i]=0;
+     }
+     System.out.print("Массив с заменой: "+Arrays.toString(array));
+    }
+}

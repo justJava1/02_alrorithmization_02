@@ -1,0 +1,31 @@
+/*
+  Даны действительные числа а1 ,а2 ,..., аn . Поменять местами наибольший и наименьший элементы.
+*/
+import java.util.Arrays;
+public class Project {
+    public static void main(String[] args) {
+        int []array={3100,-3,211,122,23,-62,15};
+        int numMin,numMax;
+        numMin= array[0];//считаем,что первый эл массива минимальное число
+        numMax= array[0];//считаем,что первый эл масства макс число
+        int iMax=0,iMin=0;//чтобы посмотреть ,какой номер эл-та в массиве
+        for(int i=0;i<array.length-1;i++)
+        {
+            if(numMax<array[i])
+            {
+                numMax=array[i];
+                iMax=i;
+                continue;
+            }
+            if(numMin>array[i]);
+            {
+                numMin=array[i];
+                iMin=i;
+            }
+        }
+        array[iMax] = numMin;
+        array[iMin] = numMax;
+        System.out.print(Arrays.toString(array));
+
+    }
+}

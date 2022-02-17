@@ -1,0 +1,30 @@
+/*
+  Дан массив действительных чисел, размерность которого N.
+Подсчитать, сколько в нем отрицательных, положительных и нулевых элементов.
+*/
+
+public class Project {
+    public static void main(String[] args) {
+        double []array={0,15,-25,31,27,-15,0,-21,0,-37,-55,-37};
+        int countPlus=0;
+        int countMinus=0;
+        int countZero=0;
+        for(int i=0;i<array.length;i++)
+        {
+            if(array[i]>0)
+            {
+                countPlus++;
+            }else if(array[i]<0)
+            {
+                countMinus++;
+            }else
+            {
+                countZero++;
+            }
+
+        }
+        System.out.println("Кол-во эл-тов равных 0: "+countZero);
+        System.out.println("Кол-во эл-тов больше 0: "+countPlus);
+        System.out.println("Кол-во эл-тов меньше 0: "+countMinus);
+    }
+}
